@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="tsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#1E1B4B" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Squircle with Gradient -->
+  <rect x="16" y="16" width="480" height="480" rx="120" fill="url(#tsGrad)" filter="url(#subtleGlow)"/>
+
+  <!-- Inner Soft Border -->
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-opacity="0.25"/>
+
+  <!-- "TS" Typography - High Contrast Bold Modern Brand Mark -->
+  <text x="256" y="325"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', sans-serif"
+        font-size="210"
+        font-weight="900"
+        fill="#FFFFFF"
+        text-anchor="middle"
+        letter-spacing="-8">TS</text>
+
+  <!-- Growth Pulse Dot in Upper Right -->
+  <circle cx="396" cy="116" r="34" fill="url(#accentGrad)" stroke="#FFFFFF" stroke-width="10"/>
+</svg>

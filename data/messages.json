@@ -1,0 +1,61 @@
+[
+  {
+    "id": "lead_1791021587081_ecz26",
+    "name": "Test Founder",
+    "email": "founder@example.com",
+    "phone": "+8801700000000",
+    "service": "Paid Advertising (Meta & Google)",
+    "budget": "$5,000/mo",
+    "message": "Testing single repo contact endpoint",
+    "subject": "Growth Strategy Inquiry",
+    "createdAt": "2026-10-03T09:59:47.081Z",
+    "read": false,
+    "replied": false
+  },
+  {
+    "id": "msg_1788902058316_ev0c5",
+    "name": "Delectus vero imped",
+    "email": "cesykefi@mailinator.com",
+    "subject": "Portfolio Inquiry",
+    "message": "Aliquid adipisci ear",
+    "createdAt": "2026-09-08T21:14:18.316Z",
+    "read": false,
+    "folder": "inbox"
+  },
+  {
+    "id": "msg_1784768253197_0cfnf",
+    "name": "Emran Hossen",
+    "email": "dev.emranhossen@gmail.com",
+    "subject": "Portfolio Inquiry",
+    "message": "hi",
+    "createdAt": "2026-07-23T00:57:33.198Z",
+    "read": true
+  },
+  {
+    "id": "msg_1784767813445_nmbst",
+    "name": "Mahbub Alam",
+    "email": "mahbub@tech.com",
+    "subject": "Full Stack Project Collaboration",
+    "message": "Hello Emran! We would love to offer you a remote Next.js lead developer project.",
+    "createdAt": "2026-07-23T00:50:13.445Z",
+    "read": true
+  },
+  {
+    "id": "msg_1784767561971_vgo2b",
+    "name": "Tanvir Hossain",
+    "email": "tanvir@work.com",
+    "subject": "Custom Web Application Inquiry",
+    "message": "Hi Emran, I love your portfolio design! Can we build a SaaS web app together?",
+    "createdAt": "2026-07-23T00:46:01.972Z",
+    "read": true
+  },
+  {
+    "id": "msg_1784767419472_s8g1r",
+    "name": "Rahim Ahmed",
+    "email": "rahim.test@example.com",
+    "subject": "Web Development Project Query",
+    "message": "Hello Emran! I need a Next.js e-commerce application built. Let us discuss budget and timeline.",
+    "createdAt": "2026-07-23T00:43:39.472Z",
+    "read": false
+  }
+]

@@ -1,0 +1,204 @@
+export interface PackageItem {
+  id: string;
+  name: string;
+  price: string;
+  period: string;
+  badge?: string;
+  description: string;
+  features: string[];
+  popular?: boolean;
+}
+
+export interface CaseStudyItem {
+  id: string;
+  title: string;
+  category: string;
+  description: string;
+  client?: string;
+  liveLink?: string;
+  fullDetails?: string;
+  deliverables?: string[];
+  image: string;
+  metric1: { label: string; value: string };
+  metric2: { label: string; value: string };
+}
+
+export interface ProfileConfig {
+  name: string;
+  title: string;
+  tagline: string;
+  headline: string;
+  subhead: string;
+  phone: string;
+  email: string;
+  location: string;
+  adSpend: string;
+  experienceYears: string;
+  projectsCount: string;
+  satisfactionRate: string;
+  averageRoas: string;
+}
+
+export interface SiteContent {
+  profile: ProfileConfig;
+  packages: PackageItem[];
+  caseStudies: CaseStudyItem[];
+}
+
+export interface LeadMessage {
+  id: string;
+  name: string;
+  email: string;
+  phone?: string;
+  service?: string;
+  budget?: string;
+  message: string;
+  subject?: string;
+  createdAt: string;
+  read: boolean;
+  replied?: boolean;
+}
+
+export const defaultSiteContent: SiteContent = {
+  profile: {
+    name: "Tajul Shahin",
+    title: "Digital Marketing & Performance Growth Specialist",
+    tagline: "Helping Bangladesh & Global Businesses Scale Profitably",
+    headline: "Scaling Businesses With High-Converting Ads & Complete Sales Funnels.",
+    subhead: "I help e-commerce, f-commerce, and business owners in Bangladesh generate predictable orders and qualified leads through structured Meta & Google Ads, scroll-stopping video creatives, fast order-form landing pages, and bulletproof CAPI pixel tracking.",
+    phone: "+8801629105607",
+    email: "tajulshahin96@gmail.com",
+    location: "Dhaka, Bangladesh",
+    adSpend: "$1M+",
+    experienceYears: "5+ Yrs",
+    projectsCount: "100+",
+    satisfactionRate: "98%",
+    averageRoas: "4.2x",
+  },
+  packages: [
+    {
+      id: "pkg-1",
+      name: "Landing Page & Ads Starter",
+      price: "$249",
+      period: "/ month",
+      badge: "",
+      description: "Essential launchpad for emerging Facebook pages and stores needing a fast COD landing page and structured Meta ads.",
+      features: [
+        "1 High-Converting 1-Page COD Landing Page",
+        "Meta Ads Setup & Daily Campaign Optimization",
+        "2 High-Converting Video Creatives (Bangla Hooks)",
+        "Server-Side Meta CAPI & Domain Verification",
+        "Bi-Weekly Performance & ROAS Reports"
+      ],
+      popular: false
+    },
+    {
+      id: "pkg-2",
+      name: "Complete E-Com Growth: Website to Ads",
+      price: "$449",
+      period: "/ month",
+      badge: "Complete Solution",
+      description: "The complete done-for-you sales machine: fast COD landing page/store, video creative production, CAPI tracking, and scaling ads.",
+      features: [
+        "Custom Fast COD Landing Page or E-Commerce Store",
+        "Full Meta (FB/IG) + Google Ads Scaling Management",
+        "4–6 UGC Product Video Creatives with Hooks / mo",
+        "Full Server-Side CAPI, GTM & GA4 Purchase Tracking",
+        "Automated SMS / WhatsApp COD Order Confirmation",
+        "Weekly Strategy, Creative Testing & ROAS Sync"
+      ],
+      popular: true
+    },
+    {
+      id: "pkg-3",
+      name: "Scale & Dominance: Full-Stack Marketing",
+      price: "$799",
+      period: "/ month",
+      badge: "Scale & Dominate",
+      description: "For scaling brands spending 1,00,000+ BDT/mo in ad spend needing custom web funnels, omnichannel ads, and daily aggressive optimization.",
+      features: [
+        "Custom Next.js / WooCommerce Web Store with A/B Funnels",
+        "Omnichannel: Meta + Google Search + YouTube + Reels Ads",
+        "8–12 Dynamic Video Creatives & Hook Variations / mo",
+        "Full Return (RTO) Reduction & Cart Recovery Automation",
+        "Catalog Sync & Dynamic Product Retargeting (DPA)",
+        "Direct Priority WhatsApp Access with Dedicated Manager"
+      ],
+      popular: false
+    },
+    {
+      id: "pkg-4",
+      name: "One-Time Website & Tracking Sprint",
+      price: "$199",
+      period: "/ one-time",
+      badge: "Website & Tracking Only",
+      description: "Complete technical foundation: fast mobile landing page with COD checkout form and bulletproof server CAPI tracking.",
+      features: [
+        "1 Custom High-Speed Mobile Landing Page",
+        "Cash on Delivery (COD) Checkout Order Form",
+        "Meta CAPI, Pixel & Domain Verification Setup",
+        "Ad Account & BM Health Compliance Audit",
+        "1-on-1 Funnel Handoff & Strategy Consultation"
+      ],
+      popular: false
+    }
+  ],
+  caseStudies: [
+    {
+      id: "case-1",
+      title: "Fashion & Apparel Brand Scaling",
+      category: "E-Commerce Fashion",
+      client: "Anannya Fashion & Lifestyle, Dhaka",
+      liveLink: "https://facebook.com",
+      description: "Scaled sales with 6 scroll-stopping video creatives, built a fast 1-page checkout landing page, and integrated server-side CAPI tracking.",
+      fullDetails: "The client was struggling with high customer acquisition costs and rising Facebook ad fatigue on their traditional FB page. We audited their Ad Account, rebuilt their pixel tracking with Meta Conversions API (CAPI), scripted and produced 6 user-generated video ads targeting Dhaka and divisional shoppers, and engineered a fast mobile-first order form that allowed customers to order in under 20 seconds with Cash on Delivery (COD). Within 60 days, daily orders scaled from 15 to 80+ while maintaining a 4.2x blended ROAS.",
+      deliverables: [
+        "Meta Ads Campaign Restructuring",
+        "6 High-Converting UGC Video Creatives",
+        "Fast 1-Page COD Order Landing Page",
+        "Server-Side Meta CAPI Tracking Setup",
+        "Daily Budget Optimization & Scaling"
+      ],
+      image: "/images/case_ecommerce.png",
+      metric1: { label: "Revenue Growth", value: "+240%" },
+      metric2: { label: "Blended ROAS", value: "4.2x" }
+    },
+    {
+      id: "case-2",
+      title: "B2B Service & SaaS Growth",
+      category: "B2B Lead Generation",
+      client: "LeadFlow Agency & Software",
+      liveLink: "https://google.com",
+      description: "Switched from broad keywords to high-intent Google Search ads paired with a 2-step qualification quiz that filters out spam clicks.",
+      fullDetails: "The company was wasting over 65% of their ad spend on broad Google Ads clicks from students and irrelevant searchers. We implemented exact-match negative keyword filtering, restructured campaigns around high-intent decision maker queries, and built a dynamic 2-step qualification quiz that filtered out non-budget prospects before booking. Lead quality increased by 160% while reducing Cost-Per-Acquisition (CPA) by 60%.",
+      deliverables: [
+        "Google Search & Performance Max Setup",
+        "2-Step Interactive Qualification Quiz",
+        "Negative Keyword & Negative Audience Lists",
+        "Server-Side Google Ads Conversion Tracking",
+        "High-Converting Value Proposition Page"
+      ],
+      image: "/images/case_saas.png",
+      metric1: { label: "Qualified Leads", value: "+160%" },
+      metric2: { label: "CPA Reduction", value: "-60%" }
+    },
+    {
+      id: "case-3",
+      title: "Fitness & Wellness Mobile App",
+      category: "App Growth & Installs",
+      client: "FitPulse Health & Fitness App",
+      liveLink: "https://play.google.com",
+      description: "Produced 12 user-generated TikTok/Reels ads and leveraged deep app-linking on Google App Campaigns to maximize paid trial activations.",
+      fullDetails: "To scale app installs across Southeast Asia and Bangladesh, we tested 12 vertical hook-driven short videos on Meta Reels and YouTube Shorts. We utilized deep app-linking directly to Google Play and Apple App Store, reducing install drop-off. The campaign generated over 25,000 installs at an average $2.10 Cost Per Install (CPI) with high 7-day retention.",
+      deliverables: [
+        "Meta Reels & YouTube Shorts Video Production",
+        "Google App Campaigns (UAC) Optimization",
+        "Deep App-Linking & Play Store Funnel",
+        "A/B Testing Creative Hooks & Call-to-Actions"
+      ],
+      image: "/images/case_app.png",
+      metric1: { label: "Installs Growth", value: "+300%" },
+      metric2: { label: "Cost Per Install", value: "$2.10" }
+    }
+  ]
+};
